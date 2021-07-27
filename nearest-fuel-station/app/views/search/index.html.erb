@@ -1,0 +1,10 @@
+<h2>Five closest stations: <%= @fuel_stations_count %></h2>
+<% @fuel_stations.each do |station| %>
+  <h3>Station: <%= station.name %></h3>
+  <h3>Address: <%= station.address %></h3>
+  <h3>Fuel Type: <%= station.fuel_type %></h3>
+  <h3>Access Times: <%= station.access_times %></h3>
+  <br>
+<% end %>
+
+<h4>Total Stations Within Five Miles: <%= @fuel_stations_count %></h4>
